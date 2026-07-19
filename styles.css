@@ -176,6 +176,7 @@ p {
 
 .hero h1 span {
   display: block;
+  color: var(--coral);
 }
 
 .hero p {
