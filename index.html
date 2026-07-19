@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الموقع تحت الصيانة | شاليهنا</title>
+  <meta name="description" content="موقع وتطبيق شاليهنا تحت الصيانة حالياً، ونرجع خلال أيام بحلة جديدة. للتواصل والحجز اتصل بنا مباشرة." />
+  <meta name="theme-color" content="#5cb4e0" />
+  <link rel="icon" href="assets/logo/favicon.png" />
+
+  <meta property="og:title" content="الموقع تحت الصيانة | شاليهنا" />
+  <meta property="og:description" content="نرجع خلال أيام بحلة جديدة. للحجز تواصل معنا مباشرة." />
+  <meta property="og:image" content="assets/logo/favicon.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <img class="brand-logo" src="assets/logo/header-shalayhna.png" alt="شاليهنا" />
+
+    <div class="location-badge">
+      <span class="location-name">الكويت</span>
+      <svg class="flag" viewBox="0 0 30 30" aria-hidden="true">
+        <clipPath id="kw-circle"><circle cx="15" cy="15" r="15" /></clipPath>
+        <g clip-path="url(#kw-circle)">
+          <rect x="0" y="0" width="30" height="10" fill="#007a3d" />
+          <rect x="0" y="10" width="30" height="10" fill="#ffffff" />
+          <rect x="0" y="20" width="30" height="10" fill="#ce1126" />
+          <path d="M0 0 L10 10 L10 20 L0 30 Z" fill="#000000" />
+        </g>
+      </svg>
+      <span class="temp" dir="ltr" id="temp">40°C</span>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <span class="status-pill">
+          <span class="dot" aria-hidden="true"></span>
+          تحت الصيانة
+        </span>
+
+        <h1>الموقع والتطبيق تحت الصيانة حالياً</h1>
+
+        <p>
+          نشتغل حالياً على تطوير منصة شاليهنا بالكامل، ورح نرجع لكم
+          <strong>خلال أيام</strong> بتجربة أسرع وأسهل لحجز الشاليهات.
+          خدمة الحجز مستمرة عن طريق التواصل المباشر معنا.
+        </p>
+      </div>
+
+      <div class="phones reveal">
+        <figure class="phone phone-back">
+          <div class="phone-screen">
+            <img src="assets/screens/app-splash.webp" alt="شاشة بدء تطبيق شاليهنا" loading="lazy" />
+            <span class="notch" aria-hidden="true"></span>
+          </div>
+        </figure>
+
+        <figure class="phone">
+          <div class="phone-screen">
+            <img src="assets/screens/app-home.webp" alt="الشاشة الرئيسية في تطبيق شاليهنا" />
+            <span class="notch" aria-hidden="true"></span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact container reveal">
+      <h2>أرقام التواصل</h2>
+      <p class="section-sub">اتصال مباشر أو واتساب</p>
+
+      <!-- الأرقام تُبنى من script.js -->
+      <div class="contact-grid" id="contact-grid"></div>
+    </section>
+
+    <section class="container reveal">
+      <div class="soon">
+        <img class="soon-mark" src="assets/logo/shell-mark-orange.png" alt="" />
+        <h2>قريباً بحلة جديدة</h2>
+        <p>تطبيق شاليهنا الجديد رح يكون متوفر على أجهزة الآيفون والأندرويد بتصميم جديد وحجز أسرع.</p>
+
+        <div class="badges">
+          <img src="assets/icons/app-store-badge.svg" alt="App Store" />
+          <img src="assets/icons/google-play-badge.svg" alt="Google Play" />
+        </div>
+        <p class="soon-note">قريباً — iOS و Android</p>
+
+        <div class="socials">
+          <a href="https://www.instagram.com/shalayhnaaa/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCmzOsW4z5tQQOd0wvNaisag" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <img src="assets/icons/youtube.svg" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    © Copyright <span id="year">2026</span> Shalayhna. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
