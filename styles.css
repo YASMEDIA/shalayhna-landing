@@ -137,36 +137,6 @@ p {
   text-align: center;
 }
 
-.status-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: rgba(233, 71, 35, 0.1);
-  color: var(--coral);
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.status-pill .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--coral);
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.35;
-  }
-}
-
 .hero h1 {
   margin-top: 20px;
   font-size: clamp(28px, 6vw, 48px);
@@ -212,15 +182,11 @@ p {
   background: #1b2a2d;
   box-shadow: var(--shadow-soft);
   transform: translateY(var(--phone-lift));
-  transform-origin: center bottom;
-  animation: phone-wiggle 7.5s ease-in-out infinite;
-  will-change: transform;
 }
 
 /* الشاشة الخلفية أنزل شوي عشان يبين العمق */
 .phone-back {
   --phone-lift: 16px;
-  animation-delay: 0.45s;
 }
 
 .phone-screen {
@@ -247,30 +213,6 @@ p {
   height: 14px;
   border-radius: 999px;
   background: #1b2a2d;
-}
-
-@keyframes phone-wiggle {
-  0%,
-  100% {
-    transform: translateY(var(--phone-lift)) rotate(0deg);
-  }
-
-  10% {
-    transform: translateY(calc(var(--phone-lift) - 1.5px)) rotate(-0.45deg);
-  }
-
-  20% {
-    transform: translateY(calc(var(--phone-lift) + 1px)) rotate(0.35deg);
-  }
-
-  30% {
-    transform: translateY(calc(var(--phone-lift) - 0.75px)) rotate(-0.2deg);
-  }
-
-  40%,
-  100% {
-    transform: translateY(var(--phone-lift)) rotate(0deg);
-  }
 }
 
 /* ------------------------------------------------------- أرقام التواصل */
@@ -523,12 +465,4 @@ p {
     transition: none;
   }
 
-  .status-pill .dot {
-    animation: none;
-  }
-
-  .phone {
-    animation: none;
-    transform: translateY(var(--phone-lift));
-  }
 }
