@@ -174,6 +174,10 @@ p {
   line-height: 1.35;
 }
 
+.hero h1 span {
+  display: block;
+}
+
 .hero p {
   margin: 16px auto 0;
   max-width: 36em;
@@ -208,7 +212,7 @@ p {
   box-shadow: var(--shadow-soft);
   transform: translateY(var(--phone-lift));
   transform-origin: center bottom;
-  animation: phone-wiggle 4.8s ease-in-out infinite;
+  animation: phone-wiggle 7.5s ease-in-out infinite;
   will-change: transform;
 }
 
@@ -250,19 +254,19 @@ p {
     transform: translateY(var(--phone-lift)) rotate(0deg);
   }
 
-  12% {
-    transform: translateY(calc(var(--phone-lift) - 4px)) rotate(-1.4deg);
+  10% {
+    transform: translateY(calc(var(--phone-lift) - 1.5px)) rotate(-0.45deg);
   }
 
-  24% {
-    transform: translateY(calc(var(--phone-lift) + 2px)) rotate(1.1deg);
+  20% {
+    transform: translateY(calc(var(--phone-lift) + 1px)) rotate(0.35deg);
   }
 
-  36% {
-    transform: translateY(calc(var(--phone-lift) - 2px)) rotate(-0.7deg);
+  30% {
+    transform: translateY(calc(var(--phone-lift) - 0.75px)) rotate(-0.2deg);
   }
 
-  48%,
+  40%,
   100% {
     transform: translateY(var(--phone-lift)) rotate(0deg);
   }
